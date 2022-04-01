@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./Card";
+import allGiftCards from "./data";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<>
+			<header>
+				<h1>Gift Cards</h1>
+			</header>
+
+			<main>
+				<section className="card-container">
+					{allGiftCards.map((card) => {
+						return <Card key={card.id} {...card} />;
+					})}
+				</section>
+			</main>
+		</>
+	);
+};
 
 export default App;
