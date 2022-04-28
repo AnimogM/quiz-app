@@ -1,5 +1,4 @@
-import Card from "./Card";
-import allGiftCards from "./data";
+
 
 const App = () => {
 	return (
@@ -9,11 +8,7 @@ const App = () => {
 			</header>
 
 			<main>
-				<section className="card-container">
-					{allGiftCards.map((card) => {
-						return <Card key={card.id} {...card} />;
-					})}
-				</section>
+				
 			</main>
 		</>
 	);
