@@ -1,5 +1,5 @@
 # Quiz App
-A web application that allows users to create a quiz. users can select topic, type of the quiz and the number of questions to be anwered. They can also select the difficulty level for the the quiz.
+A web application that allows users to create a quiz. users can select topic, type of the quiz and the number of questions to be anwered. They can also select the difficulty level for the the quiz. [preview](https://quiz-app-mu-flax.vercel.app/).
 
 ## screenshot
 
